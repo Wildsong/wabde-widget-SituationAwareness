@@ -465,7 +465,9 @@ define([
       var lyr = layer && layer.renderer ? layer : layerDefinition;
 
       if (isDate) {
-        return jimuUtils.fieldFormatter.getFormattedDate(data, getFormatInfo(field.name));
+        var formattedDateValue = jimuUtils.fieldFormatter.getFormattedDate(data, getFormatInfo(field.name));
+        //if formattedDateValue has comma then replace comma with space to make it similar in all csvs
+        return formattedDateValue.indexOf(',') > -1 ? formattedDateValue.replace(',', '') : formattedDateValue;
       }
       if ((isTypeIdField || isDomain) && layerDefinition && attr) {
         var _result = jimuUtils.getDisplayValueForCodedValueOrSubtype(lyr, field.name, attr);

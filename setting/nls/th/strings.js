@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "ไม่พบชั้นข้อมูล",
   "missingLayer": "ชื่อ: ${name}",
   "missingLayerHint": "มีอย่างน้อยหนึ่งชั้นข้อมูลที่อ้างอิงไว้ในการกำหนดค่านี้ ไม่พร้อมใช้งานในขณะนี้",
-  "drawGeodesic": "วาดรูปทรง geodesic"
+  "drawGeodesic": "วาดรูปทรง geodesic",
+  "show1KSeparatorLabel": "แสดงตัวคั่น 1000"
 });

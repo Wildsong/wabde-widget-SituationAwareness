@@ -344,9 +344,17 @@
   overflow: hidden;
 }
 
+.jimu-rtl .jimu-widget-SAT-setting .downloadTabLabel {
+  float: right;
+}
+
 .jimu-widget-SAT-setting .downloadTabTextbox {
   width: 55%;
   float: left;
+}
+
+.jimu-rtl .jimu-widget-SAT-setting .downloadTabTextbox {
+  float: right;
 }
 
 .jimu-widget-SAT-setting .downloadTabSetButton {
@@ -354,6 +362,12 @@
   float: left;
   margin-left: 17px;
   line-height: 28px;
+}
+
+.jimu-rtl .jimu-widget-SAT-setting .downloadTabSetButton {
+  float: right;
+  margin-right: 17px;
+  margin-left: 0px;;
 }
 
 .jimu-widget-SAT-setting .downloadTabLabel {
@@ -369,6 +383,10 @@
 .jimu-widget-SAT-setting .logoChooserDiv {
   width: 65%;
   float: left;
+}
+
+.jimu-rtl .jimu-widget-SAT-setting .logoChooserDiv {
+  float: right;
 }
 
 .jimu-widget-SAT-setting .imageChooserPreviewContainer {
@@ -395,11 +413,19 @@
   font-style: oblique;
 }
 
+.jimu-rtl .jimu-widget-SAT-setting .hint {
+  float: right;
+}
+
 .jimu-widget-SAT-setting .footnoteTextArea {
   width: 65% !important;
   padding: 5px !important;
   float: right;
   color: #596679;
+}
+
+.jimu-rtl .jimu-widget-SAT-setting .footnoteTextArea {
+  float: left;
 }
 
 .jimu-widget-SAT-setting .textColorContainer{
@@ -500,4 +526,8 @@
 
 .jimu-widget-SAT-setting .esriCTFieldTableParent .jimu-simple-table {
   max-height: 190px;
+}
+
+.jimu-widget-SAT-setting .esriCTPaddingBtm5 {
+  padding-bottom: 5px;
 }

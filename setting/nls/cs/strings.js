@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Vrstva nebyla nalezena",
   "missingLayer": "Název: ${name}",
   "missingLayerHint": "Jedna nebo více vrstev uvedených v této konfiguraci nejsou momentálně k dispozici.",
-  "drawGeodesic": "Kreslit geodetické tvary"
+  "drawGeodesic": "Kreslit geodetické tvary",
+  "show1KSeparatorLabel": "Zobrazit oddělovač 1000"
 });

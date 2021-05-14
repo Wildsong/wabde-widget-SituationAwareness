@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Camada não encontrada",
   "missingLayer": "Nome: ${name}",
   "missingLayerHint": "Uma ou mais camadas referidas nesta configuração não estão disponíveis atualmente.",
-  "drawGeodesic": "Desenhar formas geodésicas"
+  "drawGeodesic": "Desenhar formas geodésicas",
+  "show1KSeparatorLabel": "Mostrar separador 1000"
 });

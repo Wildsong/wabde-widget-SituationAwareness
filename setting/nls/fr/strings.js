@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Couche introuvable",
   "missingLayer": "Nom : ${name}",
   "missingLayerHint": "Une ou plusieurs couches référencées dans cette configuration sont actuellement indisponibles.",
-  "drawGeodesic": "Dessiner des formes géodésiques"
+  "drawGeodesic": "Dessiner des formes géodésiques",
+  "show1KSeparatorLabel": "Afficher le séparateur des milliers"
 });

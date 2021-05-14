@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "找不到圖層",
   "missingLayer": "名稱: ${name}",
   "missingLayerHint": "目前無法使用此配置中參考的一或多個圖層。",
-  "drawGeodesic": "繪製測地線形狀"
+  "drawGeodesic": "繪製測地線形狀",
+  "show1KSeparatorLabel": "顯示 1000 分隔符號"
 });

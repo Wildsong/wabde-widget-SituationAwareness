@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Strat tematic negăsit",
   "missingLayer": "Nume: ${name}",
   "missingLayerHint": "Unul sau mai multe straturi tematice incluse în această configurare nu sunt disponibile momentan.",
-  "drawGeodesic": "Trasare forme geodezice"
+  "drawGeodesic": "Trasare forme geodezice",
+  "show1KSeparatorLabel": "Arată separator 1000"
 });

@@ -112,7 +112,8 @@
     layerNotAvalible: "Layer Not Found",
     missingLayer: "Name: ${name}",
     missingLayerHint: "One or more layers referenced in this configuration are currently not avalible.",
-    drawGeodesic: "Draw geodesic shapes"
+    drawGeodesic: "Draw geodesic shapes",
+    show1KSeparatorLabel: "Show 1000 separator"
   }),
   "ar": 1,
   "bs": 1,

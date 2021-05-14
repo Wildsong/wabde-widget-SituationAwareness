@@ -39,6 +39,8 @@ function (declare,
     baseClass: 'jimu-widget-SAT-setting',
     _modify: false,
     row: undefined,
+    _show1KSeparator: false,
+    _firstTime :true,
 
     constructor: function (args) {
       this.row = args.tr;
@@ -61,7 +63,8 @@ function (declare,
             round: this.rdo_round.get('checked'),
             truncate: this.rdo_truncate.get('checked'),
             roundPlaces: this.roundPlaces.textBox.value,
-            truncatePlaces: this.truncatePlaces.textBox.value
+            truncatePlaces: this.truncatePlaces.textBox.value,
+            show1KSeparator: this._show1KSeparator
           });
         }
       })));
@@ -80,11 +83,13 @@ function (declare,
 
       var truncatePlaces = typeof(this.row.truncatePlaces) !== 'undefined' ? this.row.truncatePlaces : 2;
       this._initValidationTextBox(this.truncatePlaces, truncatePlaces);
-
+      //Init 1k Separator checkbox
+      //For backward  1k Separator checkbox will be checked
+      var enabled1KSeparator = typeof(this.row.show1KSeparator) !== 'undefined' ? this.row.show1KSeparator : true;
+      this._init1KSeparatorCheckBox(enabled1KSeparator);
       //init checkbox
       var modifyEnabled = typeof(this.row.modify) !== 'undefined' ? this.row.modify : false;
       this._initCheckBox(modifyEnabled);
-      this.chkModifyChanged(modifyEnabled);
     },
 
     _initValidationTextBox: function (node, v) {
@@ -145,7 +150,11 @@ function (declare,
     },
 
     rdoChanged: function () {
-      this._toggleNodes(this.rdo_round.get('checked'), this.rdo_truncate.get('checked'));
+      //on popup open dont call _toggleNodes from here bcoz its handle by chkModify change listner
+      if(!this._firstTime) {
+        this._toggleNodes(this.rdo_round.get('checked'), this.rdo_truncate.get('checked'));
+      }
+      this._firstTime = false;
     },
 
     _toggleNodes: function (enableRound, enableTruncate) {
@@ -184,6 +193,21 @@ function (declare,
       if (domClass.contains(this.btnOk, 'jimu-state-disabled')) {
         domClass.remove(this.btnOk, 'jimu-state-disabled');
       }
+    },
+
+    _init1KSeparatorCheckBox: function (v) {
+      this.chk1kSeparator = new CheckBox({
+        label: this.nls.show1KSeparatorLabel
+      });
+      this.chk1kSeparator.placeAt(this.chk1KSeparatorDIV);
+
+      this.own(on(this.chk1kSeparator, 'change', lang.hitch(this, this.chk1kSeparatorChanged)));
+
+      this.chk1kSeparator.setValue(v);
+    },
+
+    chk1kSeparatorChanged: function (v) {
+      this._show1KSeparator = v;
     }
   });
 });

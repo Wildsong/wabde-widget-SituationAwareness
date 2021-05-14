@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Slānis nav atrasts",
   "missingLayer": "Nosaukums: ${name}",
   "missingLayerHint": "Viens vai vairāki slāņi, kas norādīti šajā konfigurācijā, pašreiz nav pieejami.",
-  "drawGeodesic": "Zīmēt ģeodēziskas formas"
+  "drawGeodesic": "Zīmēt ģeodēziskas formas",
+  "show1KSeparatorLabel": "Rādīt 1000 atdalītāju"
 });

@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Lagret hittades inte",
   "missingLayer": "Namn: ${name}",
   "missingLayerHint": "Ett eller flera lager som det refereras till i den här konfigurationen är inte tillgängliga för närvarande.",
-  "drawGeodesic": "Rita geodetiska former"
+  "drawGeodesic": "Rita geodetiska former",
+  "show1KSeparatorLabel": "Visa 1000-avgränsare"
 });

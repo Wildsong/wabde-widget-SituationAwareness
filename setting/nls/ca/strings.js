@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "No s'ha trobat la capa",
   "missingLayer": "Nom: ${name}",
   "missingLayerHint": "Una o diverses capes a les quals es fa referència en aquesta configuració no estan disponibles actualment.",
-  "drawGeodesic": "Dibuixa formes geodèsiques"
+  "drawGeodesic": "Dibuixa formes geodèsiques",
+  "show1KSeparatorLabel": "Mostra el separador de milers"
 });

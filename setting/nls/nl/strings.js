@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Laag niet gevonden",
   "missingLayer": "Naam: ${name}",
   "missingLayerHint": "Een of meer lagen waarnaar in deze configuratie wordt verwezen, zijn momenteel niet beschikbaar.",
-  "drawGeodesic": "Geodesische vormen tekenen"
+  "drawGeodesic": "Geodesische vormen tekenen",
+  "show1KSeparatorLabel": "Scheidingsteken voor 1000 weergeven"
 });

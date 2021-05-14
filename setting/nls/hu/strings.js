@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Réteg nem található",
   "missingLayer": "Név: ${name}",
   "missingLayerHint": "Az ezen konfiguráció áltak hivatkozott egy vagy több réteg jelenleg nem érhető el.",
-  "drawGeodesic": "Geodéziai alakzat rajzolása"
+  "drawGeodesic": "Geodéziai alakzat rajzolása",
+  "show1KSeparatorLabel": "1000-es elválasztó megjelenítése"
 });

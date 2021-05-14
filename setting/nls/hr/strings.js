@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Sloj nije pronađen",
   "missingLayer": "Naziv: ${name}",
   "missingLayerHint": "Jedan ili više slojeva koji su navedeni u ovoj konfiguraciji trenutno nisu dostupni.",
-  "drawGeodesic": "Nacrtaj geodetske oblike"
+  "drawGeodesic": "Nacrtaj geodetske oblike",
+  "show1KSeparatorLabel": "Pokaži 1000 razdjelnik"
 });

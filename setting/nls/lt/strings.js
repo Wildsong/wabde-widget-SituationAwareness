@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Sluoksnis nerastas",
   "missingLayer": "Pavadinimas: ${name}",
   "missingLayerHint": "Vienas ar daugiau šioje konfigūracijoje nurodytų sluoksnių šiuo metu nepasiekiami.",
-  "drawGeodesic": "Brėžti geodezines figūras"
+  "drawGeodesic": "Brėžti geodezines figūras",
+  "show1KSeparatorLabel": "Rodyti tūkstančių skirtuką"
 });

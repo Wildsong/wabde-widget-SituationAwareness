@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Layer Tidak Ditemukan",
   "missingLayer": "Nama: ${name}",
   "missingLayerHint": "Satu layer atau lebih yang direferensikan dalam konfigurasi saat ini tidak tersedia.",
-  "drawGeodesic": "Gambar bentuk geodesik"
+  "drawGeodesic": "Gambar bentuk geodesik",
+  "show1KSeparatorLabel": "Tampilkan pemisah 1000"
 });

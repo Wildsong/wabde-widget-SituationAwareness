@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Kihti ei leitud",
   "missingLayer": "Nimi: ${name}",
   "missingLayerHint": "Üks või mitu selle konfiguratsiooniga seotud kihti pole praegu saadaval.",
-  "drawGeodesic": "Joonista geodeetilised kujundid"
+  "drawGeodesic": "Joonista geodeetilised kujundid",
+  "show1KSeparatorLabel": "Kuva 1000 eraldaja"
 });

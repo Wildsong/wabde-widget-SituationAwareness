@@ -568,7 +568,6 @@ define([
       for (var i = 0; i < results.length; i++) {
         var obj = results[i];
         var info = utils.stripHTML(obj.alias ? obj.alias : '') + "<br/>";
-
         var formatNum = analysisUtils.formatNumber(obj.total, obj);
         total = formatNum.total;
         var num = formatNum.num;
@@ -698,7 +697,8 @@ define([
               roundPlaces: element.roundPlaces,
               truncate: element.truncate,
               truncatePlaces: element.truncatePlaces,
-              total: 0
+              total: 0,
+              show1KSeparator: (typeof (element.show1KSeparator) !== 'undefined') ? element.show1KSeparator : true
             },
             index: i
           };
@@ -746,7 +746,8 @@ define([
                 roundPlaces: pStat.roundPlaces,
                 truncate: pStat.truncate,
                 truncatePlaces: pStat.truncatePlaces,
-                total: 0
+                total: 0,
+                show1KSeparator: (typeof (pStat.show1KSeparator) !== 'undefined') ? pStat.show1KSeparator : true
               });
             });
           }

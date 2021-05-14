@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "لم يتم العثور على الطبقة",
   "missingLayer": "الاسم: ${name}",
   "missingLayerHint": "طبقة واحدة مرجعية أو أكثر في هذا التكوين غير متوفرة حاليًا.",
-  "drawGeodesic": "ارسم أشكالاً جيوديسية"
+  "drawGeodesic": "ارسم أشكالاً جيوديسية",
+  "show1KSeparatorLabel": "عرض فاصل بين أرقام الآلافات"
 });

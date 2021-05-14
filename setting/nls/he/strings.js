@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "השכבה לא נמצאה",
   "missingLayer": "שם: ‎${name}‎",
   "missingLayerHint": "שכבה אחת או יותר שאליה קיימת הפניה בתצורה זו אינה זמינה כעת.",
-  "drawGeodesic": "שרטט צורות גיאודזיות"
+  "drawGeodesic": "שרטט צורות גיאודזיות",
+  "show1KSeparatorLabel": "הצג מפריד אלפים"
 });

@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "레이어를 찾을 수 없음",
   "missingLayer": "이름: ${name}",
   "missingLayerHint": "이 구성에서 참조되는 하나 이상의 레이어를 현재 사용할 수 없습니다.",
-  "drawGeodesic": "측지 도형 그리기"
+  "drawGeodesic": "측지 도형 그리기",
+  "show1KSeparatorLabel": "1000 단위 구분 기호 표시"
 });

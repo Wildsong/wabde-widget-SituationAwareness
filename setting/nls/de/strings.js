@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Layer nicht gefunden",
   "missingLayer": "Name: ${name}",
   "missingLayerHint": "Mindestens ein Layer, der in dieser Konfiguration referenziert wird, ist derzeit nicht verfügbar.",
-  "drawGeodesic": "Geodätische Formen zeichnen"
+  "drawGeodesic": "Geodätische Formen zeichnen",
+  "show1KSeparatorLabel": "Tausendertrennzeichen anzeigen"
 });

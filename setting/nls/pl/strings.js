@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Nie znaleziono warstwy",
   "missingLayer": "Nazwa: ${name}",
   "missingLayerHint": "Co najmniej jedna warstwa przywoływana w tej konfiguracji jest obecnie niedostępna.",
-  "drawGeodesic": "Wyświetl kształty geodezyjne"
+  "drawGeodesic": "Wyświetl kształty geodezyjne",
+  "show1KSeparatorLabel": "Pokaż separator 1000"
 });

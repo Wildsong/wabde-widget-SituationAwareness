@@ -414,6 +414,12 @@ define([
         var layerInfo = parentInfo.opLayers.getLayerInfoById(summaryLayer.id);
         if (layerInfo) {
           options.popupInfo = layerInfo.getPopupInfo();
+        } else {
+          if (typeof (summaryLayer.popupInfo) !== 'undefined') {
+            options.popupInfo = summaryLayer.popupInfo;
+          } else if (summaryLayer.infoTemplate) {
+            options.popupInfo = summaryLayer.infoTemplate.info;
+          }
         }
       }
       var _outFields = [];
@@ -795,7 +801,7 @@ define([
   // o is expected to have
   //modify, round, roundPlaces, truncate, truncatePlaces, total
   mo.formatNumber = function(v, o) {
-    var n = v;
+    var n = v, num;
     if (!isNaN(v) && v !== null && v !== '') {
       var modifyField = o && o.modify && !isNaN(v);
       var truncateExp;
@@ -808,9 +814,17 @@ define([
         n = 0;
       }
     }
+    num = n;
+    if (!isNaN(n) && n !== null && n !== '') {
+      var use1kSeparator = o && o.show1KSeparator;
+      //For Backward use1kSeparator will be undefined i.e. format the number
+      if ((use1kSeparator) || (typeof (use1kSeparator) === 'undefined')) {
+        num = utils.localizeNumber(n);
+      }
+    }
     return {
       total: n,
-      num: !isNaN(n) && n !== null && n !== '' ? utils.localizeNumber(n) : n
+      num: num
     };
   };
 

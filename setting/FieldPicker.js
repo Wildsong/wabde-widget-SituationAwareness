@@ -815,6 +815,7 @@ function (declare,
       tr.truncate = pTab.truncate;
       tr.roundPlaces = pTab.roundPlaces;
       tr.truncatePlaces = pTab.truncatePlaces;
+      tr.show1KSeparator = pTab.show1KSeparator;
     },
 
     getSkipFields: function (layer) {
@@ -893,7 +894,8 @@ function (declare,
             round: tr.round,
             truncate: tr.truncate,
             roundPlaces: tr.roundPlaces,
-            truncatePlaces: tr.truncatePlaces
+            truncatePlaces: tr.truncatePlaces,
+            show1KSeparator: tr.show1KSeparator
           });
         });
         if (flds.length > 0) {
@@ -954,7 +956,8 @@ function (declare,
             round: tr.round,
             truncate: tr.truncate,
             roundPlaces: tr.roundPlaces,
-            truncatePlaces: tr.truncatePlaces
+            truncatePlaces: tr.truncatePlaces,
+            show1KSeparator: tr.show1KSeparator
           };
           //textDirNode.innerText was coming back undefined if the widget was configured in FF
           //Field names in "advanced" summary mode were not displaying correctly when the attributes were turned off in the corresponding popup configuration

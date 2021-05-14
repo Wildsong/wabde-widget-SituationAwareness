@@ -534,7 +534,7 @@ define([
                         value + '<br/>') : value + '<br/>';
                     c += 1;
                     row.push({
-                      value: value.indexOf(',') > -1 ? value.replace(',', '') : value,
+                      value: value,
                       label: label
                     });
                     break prop_field_loop;

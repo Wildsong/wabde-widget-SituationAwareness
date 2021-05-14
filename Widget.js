@@ -336,7 +336,7 @@ define([
       onClose: function () {
         this._storeIncidents();
         this._toggleTabLayersOld();
-        this._resetInfoWindow();
+        this._resetInfoWindow(true);
         if (this.mapResize) {
           this.mapResize.remove();
           this.mapResize = null;
@@ -3052,7 +3052,7 @@ define([
             this._handlePopup();
           }
           this._clearMobileSetAsIncidentStyle();
-          this._resetInfoWindow();
+          this._resetInfoWindow(false);
           this._initEditInfo();
           this._checkHideContainer();
         } catch (err) {
@@ -3269,7 +3269,7 @@ define([
         }));
       },
 
-      _resetInfoWindow: function(){
+      _resetInfoWindow: function (hideInfowindow) {
         if (this.defaultPointContent) {
           this.pointEditLayer.infoTemplate.setContent(this.defaultPointContent);
         }
@@ -3282,8 +3282,13 @@ define([
         if (this.defaultPopupSize) {
           this.map.infoWindow.resize(this.defaultPopupSize.width, "auto");
         }
-        if (this.map.infoWindow.isShowing) {
-          this.map.infoWindow.hide();
+
+        //If app is running on anroid then dont hide infowindow on window resize
+        //so we can edit popup fields when keypad gets displayed on screen
+        if (!this._isAndroid() || hideInfowindow) {
+          if (this.map.infoWindow.isShowing) {
+            this.map.infoWindow.hide();
+          }
         }
       },
 
@@ -3765,6 +3770,15 @@ define([
         printTemplate.showAttribution = true;
         printTemplate.format = "jpg";
         return printTemplate;
+      },
+
+      /**
+      * This function detects if app is running in android
+      * @memberOf Screening/Widget
+      */
+      _isAndroid: function () {
+        var ua = navigator.userAgent.toLowerCase();
+        return ua.indexOf("android") > -1;
       }
     });
   });

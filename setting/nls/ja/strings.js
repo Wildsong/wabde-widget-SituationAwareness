@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "レイヤーが見つかりません",
   "missingLayer": "名前: ${name}",
   "missingLayerHint": "この構成で参照されている 1 つ以上のレイヤーが現在利用できません。",
-  "drawGeodesic": "測地線の形状の描画"
+  "drawGeodesic": "測地線の形状の描画",
+  "show1KSeparatorLabel": "1000 区切り文字の表示"
 });

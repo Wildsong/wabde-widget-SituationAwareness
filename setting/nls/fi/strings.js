@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Karttatasoa ei löydy",
   "missingLayer": "Nimi: ${name}",
   "missingLayerHint": "Vähintään yksi tässä kokoonpanossa viitattu karttataso ei ole käytettävissä tällä hetkellä.",
-  "drawGeodesic": "Piirrä geodeettisia muotoja"
+  "drawGeodesic": "Piirrä geodeettisia muotoja",
+  "show1KSeparatorLabel": "Näytä tuhaterotin"
 });

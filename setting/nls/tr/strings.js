@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Katman Bulunamadı",
   "missingLayer": "Adı: ${name}",
   "missingLayerHint": "Bu yapılandırmada referans verilen bir veya daha fazla katman şu anda kullanılabilir değil.",
-  "drawGeodesic": "Jeodezik şekiller çiz"
+  "drawGeodesic": "Jeodezik şekiller çiz",
+  "show1KSeparatorLabel": "Binler ayracını göster"
 });

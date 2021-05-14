@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Finner ikke laget",
   "missingLayer": "Navn: ${name}",
   "missingLayerHint": "Ett eller flere lag som det refereres til i denne konfigurasjonen, er ikke tilgjengelige for øyeblikket.",
-  "drawGeodesic": "Tegn geodetiske former"
+  "drawGeodesic": "Tegn geodetiske former",
+  "show1KSeparatorLabel": "Vis tusenskilletegn"
 });

@@ -111,5 +111,6 @@ define({
   "layerNotAvalible": "Không tìm thấy lớp",
   "missingLayer": "Tên: ${name}",
   "missingLayerHint": "Một hoặc nhiều lớp được tham chiếu trong cấu hình này hiện không khả dụng.",
-  "drawGeodesic": "Vẽ hình đo đạc"
+  "drawGeodesic": "Vẽ hình đo đạc",
+  "show1KSeparatorLabel": "Hiển thị dấu phân cách 1000"
 });
