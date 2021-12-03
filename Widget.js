@@ -1017,11 +1017,26 @@ define([
         var popupFields = this._getPopupFields(lyrEdit);
         for (var i = 0; i < popupFields.length; i++) {
           var fld = popupFields[i];
+          if (!fld.hasOwnProperty("isEditableOnLayer")) {
+            fld.isEditableOnLayer = fld.isEditable;
+          }
           if (fld.isEditable && fld.isEditableOnLayer) {
-            fInfos.push({
-              'fieldName': fld.fieldName,
-              'isEditable': fld.isEditable
-            });
+            //for Date/Time field
+            if (fld.hasOwnProperty("format") && [null, undefined, ''].indexOf(fld.format) === -1 &&
+              fld.format.hasOwnProperty("dateFormat") &&
+              fld.format.dateFormat.toString().toUpperCase().indexOf("TIME") >= 0) {
+              fld.format.time = true;
+              fInfos.push({
+                'fieldName': fld.fieldName,
+                'isEditable': fld.isEditable,
+                "format": fld.format
+              });
+            } else {
+              fInfos.push({
+                'fieldName': fld.fieldName,
+                'isEditable': fld.isEditable
+              });
+            }
           }
         }
 
@@ -1176,6 +1191,8 @@ define([
         var fldInfos;
         if (layer.infoTemplate) {
           fldInfos = layer.infoTemplate.info.fieldInfos;
+        } else if ((typeof (layer.popupInfo) !== 'undefined') || layer.popupInfo !== null) {
+          fldInfos = layer.popupInfo.fieldInfos;
         } else if (this.tab.tabLayers[0].url.indexOf("MapServer") > -1) {
           var lID = this.tab.tabLayers[0].url.split("MapServer/")[1];
           var mapLayers = this.parent.map.itemInfo.itemData.operationalLayers;

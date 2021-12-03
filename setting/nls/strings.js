@@ -1,4 +1,4 @@
-﻿define({
+define({
   root: ({
     tabs_section_Label: "Tabs",
     addTab: "Add Tab",

@@ -890,9 +890,11 @@ define([
             break;
           }
         }
-        var s = query(".button-container")[0];
-        domStyle.set(s.children[2], "display", allValid ? "inline-block" : "none");
-        domStyle.set(s.children[3], "display", allValid ? "none" : "inline-block");
+        if (allValid) {
+          this._enableOk();
+        } else {
+          this._disableOk();
+        }
       },
 
       _moveRow: function (up, row) {
@@ -1148,12 +1150,11 @@ define([
           }
         }
         var p = this.parent;
-        var s = query(".button-container")[0];
-        domStyle.set(s.children[2], "display", allValid && p.saveValid && p.textValid && p.bufferValid ?
-          "inline-block" : "none");
-        domStyle.set(s.children[3], "display", allValid && p.saveValid && p.textValid && p.bufferValid ?
-          "none" : "inline-block");
-
+        if (allValid && p.saveValid && p.textValid && p.bufferValid) {
+          this.parent._enableOk();
+        } else {
+          this.parent._disableOk();
+        }
         return isValid;
       },
 
@@ -1313,14 +1314,14 @@ define([
 
       _disableOk: function () {
         var s = query(".button-container")[0];
-        domStyle.set(s.children[2], "display", "none");
-        domStyle.set(s.children[3], "display", "inline-block");
+        domStyle.set(s.children[0], "display", "none");
+        domStyle.set(s.children[1], "display", "inline-block");
       },
 
       _enableOk: function () {
         var s = query(".button-container")[0];
-        domStyle.set(s.children[2], "display", "inline-block");
-        domStyle.set(s.children[3], "display", "none");
+        domStyle.set(s.children[0], "display", "inline-block");
+        domStyle.set(s.children[1], "display", "none");
       },
 
       getLogo: function () {

@@ -1,4 +1,4 @@
-﻿define({
+define({
   root: ({
     _widgetLabel: "Situation Awareness",
     locate_incident: "Locate Incident",

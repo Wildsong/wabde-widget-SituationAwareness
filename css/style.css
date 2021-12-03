@@ -1006,6 +1006,10 @@
      background-image: none;
 }
 
+.jimu-rtl .jimu-widget-SAT-ai .esriAttributeInspector .atiButton {
+  float: right;
+}
+
 .jimu-widget-SAT-ai .esriAttributeInspector .atiButtons {
      height:30px;
      width:100%;

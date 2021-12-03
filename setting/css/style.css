@@ -202,6 +202,10 @@
     min-width: 155px;
 }
 
+.jimu-rtl .jimu-widget-SAT-setting .shortTypeSelect .dijitSelectLabel {
+  text-align: right;
+}
+
 .jimu-widget-SAT-setting .display-options{
   display: inline-block;
   margin-right: 30px;
@@ -457,6 +461,10 @@
   float: right;
 }
 
+.jimu-rtl .jimu-widget-SAT-setting .field-options-footer {
+  float: left;
+}
+
 /* field options */
 
 .jimu-popup .SAT-warning-icon {
@@ -483,6 +491,7 @@
 .jimu-rtl .jimu-widget-SAT-setting .float-right {
   float: left;
   margin-left: 20px;
+  margin-right: 0px;
 }
 
 .jimu-widget-SAT-setting .edit-options {
@@ -530,4 +539,12 @@
 
 .jimu-widget-SAT-setting .esriCTPaddingBtm5 {
   padding-bottom: 5px;
+}
+
+.jimu-widget-SAT-setting .esriCTSummaryChk .jimu-checkbox .label{
+  width: 190px;
+}
+
+.jimu-widget-SAT-setting .esriCTSummaryChk .jimu-checkbox {
+  align-items: start;
 }
